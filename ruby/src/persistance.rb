@@ -1,0 +1,3 @@
+def persistance(n)
+
+end

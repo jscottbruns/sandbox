@@ -1,0 +1,8 @@
+guard :rspec, cmd: 'bundle exec rspec' do
+
+  watch('num_pad.rb') { "spec/num_pad_spec.rb" }
+  watch('autocomplete.rb') { "spec/autocomplete_spec.rb" }
+
+  # rspec = dsl.rspec
+  # watch(rspec.spec_files)
+end
