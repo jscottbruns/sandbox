@@ -10,8 +10,7 @@ def generate
     c += 1
   end
   r = rand(10000)
-  print @prime_concat #[r..r+5]
-  binding.pry
+  @prime_concat[r..r+5]
 end
 
 def prime?(n)
