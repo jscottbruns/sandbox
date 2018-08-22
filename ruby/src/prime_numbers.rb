@@ -7,3 +7,12 @@ class PrimeNum
     true
   end
 end
+
+c = ARGV[0].to_i
+primes = []
+
+(2..c).each do |i|
+  primes << i if PrimeNum.prime?(i)
+end
+
+puts primes.join(', ')
